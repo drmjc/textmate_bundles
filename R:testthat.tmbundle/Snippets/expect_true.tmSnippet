@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>expect_true(${1:object}, ${2:info=NULL}, ${3:label=NULL})
+</string>
+	<key>name</key>
+	<string>expect_true</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>expect</string>
+	<key>uuid</key>
+	<string>28CA604B-51B0-4593-8E96-743CCD024048</string>
+</dict>
+</plist>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>test_that("${1:test name}", {
+	${2:expect_that(TRUE, is_true())}
+})
+</string>
+	<key>name</key>
+	<string>test_that</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>test</string>
+	<key>uuid</key>
+	<string>228C3326-8CD9-4167-90B4-736C44624955</string>
+</dict>
+</plist>

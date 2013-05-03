@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>@useDynLin ${1:package} {2:optionalRoutineA} {3:optionalRoutineB}</string>
+	<key>name</key>
+	<string>@useDynLib</string>
+	<key>scope</key>
+	<string>source.r comment.documentation.roxyen</string>
+	<key>tabTrigger</key>
+	<string>use</string>
+	<key>uuid</key>
+	<string>F0058906-4C7E-4B8E-AE41-E20E10F8760F</string>
+</dict>
+</plist>
