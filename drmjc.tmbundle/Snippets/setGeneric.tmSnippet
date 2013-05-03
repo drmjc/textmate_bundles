@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>#' $1
+#'
+#' @param
+#' @return something
+#' @author Mark Cowley
+#' @exportMethod $1
+#' @rdname $1-methods
+#' @docType methods
+#' @examples
+#'
+setGeneric(
+	"${1:function.name}",
+	function(${2:arg1}) {
+		standardGeneric("$1")
+	}
+)
+
+#' @rdname $1-methods
+#' @aliases $1,$3-method
+setMethod(
+	"$1",
+	signature=signature("${3:class1}"),
+	function($2) {
+		$4
+	}
+)
+</string>
+	<key>name</key>
+	<string>setGeneric</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>setGeneric</string>
+	<key>uuid</key>
+	<string>66BA09A1-D96D-441B-B490-FF14DBB67D8B</string>
+</dict>
+</plist>

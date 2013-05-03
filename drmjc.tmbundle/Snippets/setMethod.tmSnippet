@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>#' @rdname $1-methods
+#' @aliases $1,$2-method
+setMethod("${1:method.name}",
+	signature=signature("${2:class1}"),
+	function(${3:arg1}) {
+		$4
+	}
+)
+</string>
+	<key>name</key>
+	<string>setMethod</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>setMethod</string>
+	<key>uuid</key>
+	<string>737EC3E4-A94C-4B4F-B994-4F691FE854C0</string>
+</dict>
+</plist>

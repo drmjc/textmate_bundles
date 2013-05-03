@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># Check if a program is installed
+function checkdependency {
+	hash \$1 2&gt; /dev/null || { echo &gt;&amp;2 "I require \$1 but it's not installed.  Aborting."; exit 1; }
+}
+
+$1</string>
+	<key>name</key>
+	<string>bash: checkdependency</string>
+	<key>scope</key>
+	<string>source.shell</string>
+	<key>tabTrigger</key>
+	<string>checkdependency</string>
+	<key>uuid</key>
+	<string>DDA0110B-D032-4777-BF2A-E7BC87E53609</string>
+</dict>
+</plist>

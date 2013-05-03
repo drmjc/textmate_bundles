@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>require($1, quietly=TRUE) || {biocLite("$1", dep=NA); require($1, quietly=TRUE)} || stop("failed to load/install $1")</string>
+	<key>name</key>
+	<string>require || install bioc || stop</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>reqb</string>
+	<key>uuid</key>
+	<string>B4176605-F922-4642-8251-BC6998326354</string>
+</dict>
+</plist>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>function usage {
+	cat &lt;&lt; EOF
+usage:
+    updateR.sh -h
+    updateR.sh [options] &lt;/path/to/package&gt;
+    updateR.sh [-l &lt;/usr/local/R/library&gt;] [-r] [-c] [-x] [-s] [-b] [-w] [-g] [-m] [-d] [-i] [-d] &lt;/path/to/package&gt;
+
+OPTIONS
+-r: roxygenize the package.
+-c: R CMD CHECK the package.
+-s: build source package
+-b: build MAC binary package
+-w: build WINDOWS binary package (currently unsupported).
+-g: --no-vignettes
+-m: --no-manual
+-d: --no-docs
+-x: --no-examples (R CMD CHECK)
+-i: R CMD INSTALL the package
+-d: deploy the source package to the default host
+EOF
+}
+
+$1</string>
+	<key>name</key>
+	<string>bash: usage</string>
+	<key>scope</key>
+	<string>source.shell</string>
+	<key>tabTrigger</key>
+	<string>usage</string>
+	<key>uuid</key>
+	<string>68F8ED61-0826-4476-9E87-B94BBAD72334</string>
+</dict>
+</plist>

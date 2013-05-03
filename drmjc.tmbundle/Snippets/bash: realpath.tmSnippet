@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># expand the file path in \$1 to the absolute path
+function realpath {
+	python -c 'import os,sys;print os.path.realpath(sys.argv[1])' "\$1"
+}
+
+$1</string>
+	<key>name</key>
+	<string>bash: realpath</string>
+	<key>scope</key>
+	<string>source.shell</string>
+	<key>tabTrigger</key>
+	<string>realpath</string>
+	<key>uuid</key>
+	<string>78DF0344-32E6-4CB9-BFC4-E8A0C2DD6725</string>
+</dict>
+</plist>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string># Save a copy of this file to the backup directory
+# http://wiki.macromates.com/Main/Howtos#BackupOnSave
+THEDATE=`date +"%Y%m%d"`
+THETIME=`date +"%H%M%S"`
+filedata=`cat`
+mkdir -p "$TM_BACKUP_DIR/$THEDATE"
+echo "$filedata" &gt; "$TM_BACKUP_DIR/$THEDATE/$TM_FILENAME.$THEDATE.$THETIME.backup"
+du -hd 0 "$TM_BACKUP_DIR"</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>@s</string>
+	<key>name</key>
+	<string>Make backup before saving</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>uuid</key>
+	<string>8073952C-CEDA-4F6C-B1AE-9E528475F66B</string>
+</dict>
+</plist>

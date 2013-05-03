@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>while getopts "l:rcsbwhgmdxtid" option; do
+	# echo "Processing option $OPTARG $OPTIND $OPTVAL"
+	case "\${option}" in
+		l) R_LIB="${OPTARG}";;
+		r) ROXYGENIZE=0;;
+		c) CHECK=0;;
+		s) SOURCE=0;;
+		b) BINARY=0;;
+		w) WINBINARY=0;;
+		g) OPTIONS="${OPTIONS} --no-vignettes";;
+		m) OPTIONS="${OPTIONS} --no-manual";;
+		d) OPTIONS="${OPTIONS} --no-docs";;
+		x) OPTIONS="${OPTIONS} --no-examples";;
+		t) TESTTHAT=0;;
+		i) INSTALL=0;;
+		d) DEPLOY=0;;
+		h) usage; exit 1;;
+		[?]) usage; exit 1;;
+	esac
+	# this should make \$1 be the &lt;/path/to/package&gt; argument
+	shift \$((OPTIND-1)); OPTIND=1
+done
+
+$1</string>
+	<key>name</key>
+	<string>bash: getopts</string>
+	<key>scope</key>
+	<string>source.shell</string>
+	<key>tabTrigger</key>
+	<string>getopts</string>
+	<key>uuid</key>
+	<string>E33514F4-5769-45DD-90AD-86D0ADA633E5</string>
+</dict>
+</plist>

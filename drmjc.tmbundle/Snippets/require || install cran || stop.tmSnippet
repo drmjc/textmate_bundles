@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>require($1, quietly=TRUE) || {install.packages("$1", dep=NA); require($1, quietly=TRUE)} || stop("failed to load/install $1")</string>
+	<key>name</key>
+	<string>require || install cran || stop</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>tabTrigger</key>
+	<string>reqc</string>
+	<key>uuid</key>
+	<string>A22AF1BD-4D5A-4929-870A-3CFD08F83665</string>
+</dict>
+</plist>

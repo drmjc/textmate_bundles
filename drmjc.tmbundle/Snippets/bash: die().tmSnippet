@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># cause execution to terminate, with an optional message,
+# and optional error code.
+# \$1: optional error message
+# \$2: optional error code. default = 1
+function die {
+	msg="######### ABORTING: \${1-Unexpected error}"
+	exitcode=\${2-1}
+	echo &gt;&amp;2 "\$msg"
+	exit \$exitcode
+}
+
+$1</string>
+	<key>name</key>
+	<string>bash: die()</string>
+	<key>scope</key>
+	<string>source.shell</string>
+	<key>tabTrigger</key>
+	<string>die</string>
+	<key>uuid</key>
+	<string>A08E7E8E-D8C6-4369-B9FC-FDA62355753D</string>
+</dict>
+</plist>

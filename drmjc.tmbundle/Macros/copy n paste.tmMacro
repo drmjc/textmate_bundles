@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>paste:</string>
+		</dict>
+	</array>
+	<key>name</key>
+	<string>copy n paste</string>
+	<key>scope</key>
+	<string>source.r</string>
+	<key>uuid</key>
+	<string>D77DFCB1-352A-429D-85C6-4DD5E9534461</string>
+</dict>
+</plist>
