@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\begin{${1:itemize}}
+${TM_SELECTED_TEXT/^(([^\\]*):\s*)?(.+)$/\n\t\item(?1: [ $2 ]) $3/g}
+\end{${1:itemize}}
+</string>
+	<key>keyEquivalent</key>
+	<string>^L</string>
+	<key>name</key>
+	<string>Itemize Lines in Selection copy</string>
+	<key>scope</key>
+	<string>source.r comment.documentation.roxyen</string>
+	<key>uuid</key>
+	<string>556302DF-6770-49CB-BEFF-AB4112509B95</string>
+</dict>
+</plist>

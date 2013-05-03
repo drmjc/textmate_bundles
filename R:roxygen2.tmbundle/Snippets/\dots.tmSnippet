@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>@param \dots arguments passed to </string>
+	<key>name</key>
+	<string>\dots</string>
+	<key>scope</key>
+	<string>source.r comment.documentation.roxyen</string>
+	<key>tabTrigger</key>
+	<string>dots</string>
+	<key>uuid</key>
+	<string>E47E3FD1-2914-480D-94EB-9810401A5836</string>
+</dict>
+</plist>
